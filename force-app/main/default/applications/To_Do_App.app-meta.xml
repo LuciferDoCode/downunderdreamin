@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#5D97D7</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>To Do App</label>
+    <navType>Standard</navType>
+    <tabs>Home</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Lightning_Superbadge_LWC_UtilityBar</utilityBar>
+</CustomApplication>
