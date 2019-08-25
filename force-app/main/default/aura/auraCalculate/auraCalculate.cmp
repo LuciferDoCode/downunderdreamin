@@ -1,0 +1,18 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+
+    <aura:attribute name="lwcCount" type="Integer" default="1"/>
+    <lightning:card>
+        <aura:set attribute="title">
+            <lightning:icon iconName="utility:connected_apps" size="small"/>
+            Event Handling from LWC
+        </aura:set>
+        <aura:set attribute="actions">
+            <c:lwcCalculate onIncreaseCount="{! c.handleIncrement }"/>
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:badge label="{! 'LWC Button Hit Count : ' + v.lwcCount }"/>
+        </aura:set>
+        <div style="font-size: 24px;">Winter is Gone!!</div>
+    </lightning:card>
+
+</aura:component>
