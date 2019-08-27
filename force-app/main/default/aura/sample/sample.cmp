@@ -1,0 +1,20 @@
+<aura:component implements="force:appHostable">
+
+    <div class="c-container">
+        <lightning:layout horizontalAlign="spread" multipleRows="true">
+            <lightning:layoutItem padding="around-small" size="6">
+                <c:auraHelloWorld />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="6">
+                <c:auraCalculate />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="6">
+                <c:levelThree />
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="6">
+                <!-- <c:documentCmp /> -->
+            </lightning:layoutItem>
+
+        </lightning:layout>
+    </div>
+</aura:component>	

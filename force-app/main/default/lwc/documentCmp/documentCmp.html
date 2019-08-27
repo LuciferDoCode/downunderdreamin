@@ -1,0 +1,10 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Document Tree (Shadow DOM Example)" icon-name="standard:account">
+        <lightning-button   variant="brand" label="Show Shadow Dom Element" title="Show" slot="actions" onclick={showShadowElement} class="slds-m-left_x-small"></lightning-button>
+        <p class="slds-p-horizontal_small">This text is in Document Tree which will use the Style Defined by this component.</p>
+        <div> </div>
+        <c-shadow-tree>
+            <span class="slds-p-horizontal_small">This text is inside Shadow Tree which will not use the Styling Defined by Document Tree Component.</span>
+        </c-shadow-tree>
+    </lightning-card>
+</template>

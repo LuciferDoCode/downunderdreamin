@@ -5,8 +5,7 @@
                 <template for:each={todolst.data} for:item="todo">
                     <lightning-layout-item padding="around-small" size="12" key={todo.id}>
                         <lightning-card  variant="Narrow"  title={todo.name} icon-name="standard:account">
-                            <lightning-button-icon icon-name="action:edit"  variant="border-filled" alternative-text="Edit Task" slot="actions"></lightning-button-icon>
-                            <lightning-button-icon icon-name="action:delete"  variant="border-filled" alternative-text="Delete Task" class="slds-m-left_xx-small" slot="actions"></lightning-button-icon>
+                            <a class="slds-button slds-button_brand" onclick={onDelete} data-id={todo.id} href="javascript:void(0);" slot="actions">Delete</a>
                             <p class="slds-p-horizontal_small">{todo.description}</p>
                             <p slot="footer">{todo.category}</p>
                         </lightning-card>

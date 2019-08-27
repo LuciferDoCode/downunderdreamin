@@ -10,5 +10,6 @@
     <label>To Do App</label>
     <navType>Standard</navType>
     <tabs>Home</tabs>
+    <tabs>Samples</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

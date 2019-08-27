@@ -2,23 +2,23 @@
     <lightning-card  variant="Narrow"  title="Create a new To-do" icon-name="standard:account">
         <lightning-layout multiple-rows="true">
             <lightning-layout-item padding="around-small" size="12">
-                <lightning-input type="text" name="todo-name" label="Heading" onchange={genericChangeHandler}></lightning-input>
+                <lightning-input type="text" name="todo-name" label="Heading" onchange={genericChangeHandler} ></lightning-input>
             </lightning-layout-item>
             <template if:true={options.data}>
                 <lightning-layout-item padding="around-small" size="12">
                     <lightning-combobox name="todo-category" label="To-Do Category" options={options.data}
-                        placeholder="Choose here..." onchange={genericChangeHandler}>
+                        placeholder="Choose here..." onchange={genericChangeHandler} >
                     </lightning-combobox>
                 </lightning-layout-item>
             </template>
             <lightning-layout-item padding="around-small" size="12">
-                <lightning-input type="date" name="todo-due-date" label="Due date" onchange={genericChangeHandler}></lightning-input>
+                <lightning-input type="date" name="todo-due-date" label="Due date" onchange={genericChangeHandler} ></lightning-input>
             </lightning-layout-item>
             <lightning-layout-item padding="around-small" size="12">
-                <lightning-input type="date" name="todo-start-date" label="Start date" onchange={genericChangeHandler}></lightning-input>
+                <lightning-input type="date" name="todo-start-date" label="Start date" onchange={genericChangeHandler} ></lightning-input>
             </lightning-layout-item>
             <lightning-layout-item padding="around-small" size="12">
-                <lightning-textarea name="todo-description" label="Description" onchange={genericChangeHandler}></lightning-textarea>
+                <lightning-textarea name="todo-description" label="Description" onchange={genericChangeHandler} ></lightning-textarea>
             </lightning-layout-item>
         </lightning-layout>    
         

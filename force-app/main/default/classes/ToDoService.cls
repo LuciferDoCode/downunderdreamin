@@ -17,6 +17,10 @@ public with sharing class ToDoService {
                                 ORDER BY LastModifiedDate DESC];
         return getModelList(todoLst);
     }
+    @AuraEnabled
+    public static void deleteTodo(String todoid){
+        DELETE new Todo__c(Id=todoid);
+    }
 
     @AuraEnabled
     public static Todo__c createTodo(String todoString){

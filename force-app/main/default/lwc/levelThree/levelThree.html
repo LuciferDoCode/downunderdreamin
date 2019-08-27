@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Level Three Component" icon-name="custom:custom14">
+        <div class="slds-card_body slds-card__body_inner">
+            <p> {text} </p>
+            <div class="border">
+                <c-level-two onleveloneupdate={updateText} onleveltwoupdate={updateText}></c-level-two>
+            </div>
+        </div>
+    </lightning-card>
+</template>

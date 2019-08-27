@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Level Two Component" icon-name="custom:custom9">
+        <lightning-button slot="actions" variant="success" label="Dispatch Event From Level Two" title="Dispatch" onclick={handleClick}></lightning-button>
+        <div class="slds-card_body slds-card__body_inner">
+            <p> {text} </p>
+            <div class="border">
+                <c-level-one onleveloneupdate={updateText} ></c-level-one>
+            </div>
+        </div>
+    </lightning-card>
+</template>

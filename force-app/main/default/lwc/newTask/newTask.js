@@ -1,6 +1,7 @@
 /* eslint-disable no-debugger */
 /* eslint-disable no-console */
 import { LightningElement, track, wire } from 'lwc';
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import getCategoryPicklist from '@salesforce/apex/ToDoService.getCategoryPicklist';
 import createTodo from '@salesforce/apex/ToDoService.createTodo';
 
@@ -40,6 +41,12 @@ export default class NewTask extends LightningElement {
             todoString : JSON.stringify(this.todo)
         })
         .then((data) => {
+            this.todo = {};
+            this.dispatchEvent(new ShowToastEvent({
+                "title": "Success!",
+                "type" : "success",
+                "message": "Record created!"
+            }));
             // Dispatches the event.
             this.dispatchEvent(new CustomEvent('refreshlist', {
                 data : data
@@ -50,5 +57,5 @@ export default class NewTask extends LightningElement {
                 'message ' + error.body.message
         })
     }
-    
+
 }

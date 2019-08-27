@@ -1,7 +1,7 @@
 <template>
     <lightning-layout>
         <lightning-layout-item padding="around-small" size="8">
-            <c-todo-list todolst={todolst}></c-todo-list>
+            <c-todo-list todolst={todolst} ondeletetask={onDelete}></c-todo-list>
         </lightning-layout-item>
         <lightning-layout-item padding="around-small" size="4">
             <c-new-task onrefreshlist={onRefresh}></c-new-task>
