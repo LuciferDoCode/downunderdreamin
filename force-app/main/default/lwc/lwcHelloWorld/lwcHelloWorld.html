@@ -1,7 +1,8 @@
 <template>
-    <lightning-card title="LWC Hello Jaipur!!" icon-name="custom:custom14">
+    <lightning-card title="LWC Hello Sydney!" icon-name="custom:custom14">
         <div class="slds-card_body slds-card__body_inner">
-            Hello DUG!!
+            <lightning-input type="text" name="welcome-msg" label="Welcome" onchange={genericChangeHandler} ></lightning-input>
+            {welcomeMsg}
         </div>
     </lightning-card>
 </template>
